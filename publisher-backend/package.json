@@ -1,0 +1,15 @@
+{
+  "name": "publisher-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.3",
+    "random-sentence": "^1.0.4"
+  }
+}
