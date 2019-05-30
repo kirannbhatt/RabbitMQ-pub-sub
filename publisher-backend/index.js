@@ -18,7 +18,7 @@ amqp.connect("amqp://localhost", (error0, connection) => {
       let message = {
         message: randomSentence({ words: 5 }),
         timestamp: new Date(),
-        priority: Math.floor(Math.random() * 10)
+        priority: Math.floor(Math.random() * 10 + 1)
       };
       channel.sendToQueue(queue, Buffer.from(JSON.stringify(message)));
     }, 50);
