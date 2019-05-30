@@ -11,7 +11,6 @@ amqp.connect("amqp://localhost", (error0, connection) => {
     }
 
     let queue = "message";
-    let message = "Test message";
     channel.assertQueue(queue, {
       durable: false
     });
