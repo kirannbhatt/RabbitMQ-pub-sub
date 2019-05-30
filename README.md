@@ -2,6 +2,13 @@
 Coding task for Software Developer at Zegal.
 
 ## Installation
+
+- Pre-requisites
+  - ``` Node.js LTS version```
+  - ``` RabbitMQ ```
+
+  Installed in the computer.
+
 - Clone the repository.
 
 - cd into cloned directory.
