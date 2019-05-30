@@ -1,4 +1,5 @@
 const amqp = require("amqplib/callback_api");
+const randomSentence = require("random-sentence");
 
 amqp.connect("amqp://localhost", (error0, connection) => {
   if (error0) {
@@ -14,7 +15,13 @@ amqp.connect("amqp://localhost", (error0, connection) => {
     channel.assertQueue(queue, {
       durable: false
     });
-    channel.sendToQueue(queue, Buffer.from(message));
-    console.log(` send ${message}`);
+    setInterval(() => {
+      let message = {
+        message: randomSentence({ words: 5 }),
+        timestamp: new Date(),
+        priority: Math.floor(Math.random() * 10)
+      };
+      channel.sendToQueue(queue, Buffer.from(JSON.stringify(message)));
+    }, 50);
   });
 });
