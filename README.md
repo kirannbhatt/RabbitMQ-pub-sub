@@ -1,6 +1,3 @@
-# zegal-test
-Coding task for Software Developer at Zegal.
-
 ## Installation
 
 - Pre-requisites
@@ -21,7 +18,7 @@ Coding task for Software Developer at Zegal.
   
   * **subscriber-backend** : contains the backend code for message subscriber.
   
-- cd into each of the abode mentioned directories in seperate terminal and,
+- cd into each of the above mentioned directories in seperate terminal and,
 
   - Install require dependencies:
     ``` npm install ``` 
